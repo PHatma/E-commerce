@@ -1,0 +1,22 @@
+<section class="my-2">
+  <div class="row g-3">
+    @for(cat of categoriesList ;track cat._id){
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-img">
+          <img
+            [src]="cat.image"
+            [alt]="cat.name"
+            height="300px"
+            class="w-100"
+          />
+        </div>
+
+        <div class="card-body">
+          <h3 class="h3 text-success text-center ">{{ cat.name }}</h3>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</section>
