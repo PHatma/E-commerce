@@ -1,0 +1,13 @@
+<section class="p-1">
+    <h3>All Brands</h3>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-2 p-2" *ngFor="let brand of data">
+            <div class="product cursor-pointer">
+               <div>
+                <img height="200" [src]="brand.image" class="w-100 rounded" [alt]="brand.name.split(' ').slice(0,2).join(' ')" srcset="">
+                <h3 class="h5">{{brand.name}}</h3>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
